@@ -1,0 +1,94 @@
+.container-fluid {
+    text-align: center;
+}
+
+.container {
+    align-content: center;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+.claimBtn {
+    background-color: #1e97f4;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+.modal-content {
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+.modal-header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 20px;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.modal-body {
+    padding: 20px;
+}
+
+
+.form-group.row {
+    margin-bottom: 20px;
+}
+
+
+.col-form-label {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+
+.form-control,
+.form-control-file {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    height: auto;
+}
+
+
+#claimSubmitBtn {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    border-color: #007BFF;
+    transition: background-color 0.3s ease;
+}
+
+#claimSubmitBtn:hover {
+    background-color: #0056b3;
+}
+
+
+.modal-footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e5e5e5;
+    padding: 15px 20px;
+}
+
+
+.form-group.row:last-child {
+    text-align: center;
+}
+
+#claimSubmitBtn {
+
+}
+

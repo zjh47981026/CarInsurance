@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quote</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/home.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/quote.css">
+</head>
+<body>
+<div class="container mt-5 d-flex flex-column justify-content-center vh-100" id="content">
+    <div class="multi-step-form">
+        <!-- Step 1 -->
+        <div class="form-step active" id="step1">
+            <h4>Tell us about your vehicle(s)...</h4>
+            <label>Make: </label>
+            <select class="select" id="make">
+                <option>Any Make</option>
+                <option>Acura</option>
+                <option>Audi</option>
+                <option>BMW</option>
+            </select>
+            <br/><br/>
+            <label for="model">Model:</label>
+            <select class ="select" id="model">
+                <option class="defaultModel"></option>
+            </select>
+            <br/><br/>
+            <label for="year">Year:</label>
+            <select class ="select" id="year">
+                <option></option>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020</option>
+            </select>
+            <br/><br/>
+            <label for="mileage">Mileage:</label>
+            <input type="number" id="mileage"/>
+            <br/><br/>
+            <label for="vin">VIN:</label>
+            <input type="text" id="vin" />
+            <br/><br/>
+            <button class="btn btn-primary next-step mt-3">Next</button>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="form-step" id="step2">
+            <h4>Driver information: </h4>
+            <div class="row driver">
+                <label><b>Driver 1:</b></label>
+                <br/>
+                <label>Name: </label>
+                <input type="text" class="name"/>
+                <br/><br/>
+                <label>License:</label>
+                <input type="text" class="licenseNum"/>
+                <br/><br/>
+                <label>Age: </label>
+                <input type="number" class="age"/>
+                <br/><br/>
+                <label>Number of Accidents: </label>
+                <input type="number" class="accidents"/>
+                <br/><br/>
+                <button clss="btn btn-secondary" id="addDriver"><i class="fa fa-plus" aria-hidden="true"></i>Add another driver</button>
+                <br/><br/>
+            </div>
+            <div class="row driver" id="driver2">
+                <label><b>Driver 2:</b></label>
+                <br/>
+                <label>Name: </label>
+                <input type="text" class="name"/>
+                <br/><br/>
+                <label>License:</label>
+                <input type="text" class="licenseNum"/>
+                <br/><br/>
+                <label>Age: </label>
+                <input type="number" class="age"/>
+                <br/><br/>
+                <label>Number of Accidents: </label>
+                <input type="number" class="accidents"/>
+                <br/>
+                <button class="btn btn-secondary" id="cancelDriverBtn">Cancel</button>
+                <br/><br/>
+            </div>
+            <div class = "row">
+                <button class="btn btn-secondary prev-step mt-3">Previous</button>
+                <button class="btn btn-primary next-step mt-3">Next</button>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="form-step" id="step3">
+            <h4>Choose your plans: </h4>
+            <label>Liability: </label>
+            <select class="select" id="liabilitySelect">
+                <option>$15k/$30k/$5k</option>
+                <optoin>$15k/$30k/$10k</optoin>
+                <option>$15k/$30k/$15k</option>
+                <option>$15k/$30k/$25k</option>
+            </select>
+            <label>Cost: </label>
+            <span id="liabilityCost">$300</span>
+            <br/><br/>
+            <label>Uninsured/underinsured motorist: </label>
+            <select class="select" id="uninsuredSelect">
+                <option>No Coverage</option>
+                <option>$15k/$30k</option>
+            </select>
+            <label>Cost: </label>
+            <span id="uninsuredCost">$0</span>
+            <br/><br/>
+            <label>Medical payments: </label>
+            <select class="select" id="medicalSelect">
+                <option>$5,000 first party benefits</option>
+                <opiton>$10,000 first party benefits</opiton>
+                <option>$25,000 first party benefits</option>
+                <option>$50,000 first party benefits</option>
+                <option>$100,000 first party benefits</option>
+            </select>
+            <label>Cost: </label>
+            <span id="medicalCost">$30</span>
+            <br/><br/>
+            <label>Comphrehensive: </label>
+            <select class="select" id="comprehensiveSelect">
+                <option>No Coverage</option>
+                <option>$100 deductible</option>
+                <option>$250 deductible</option>
+                <option>$500 deductible</option>
+                <option>$750 deductible</option>
+                <option>$1,000 deductible</option>
+                <option>$1,500 deductible</option>
+            </select>
+            <label>Cost: </label>
+            <span id="comprehensiveCost">$0</span>
+            <br/><br/>
+
+            <label>Collision: </label>
+            <select class="select" id="collisionSelect">
+                <option>No Coverage</option>
+                <option>$100 deductible</option>
+                <option>$250 deductible</option>
+                <option>$500 deductible</option>
+                <option>$1,000 deductible</option>
+                <option>$1,500 deductible</option>
+                <option>$2,000 deductible</option>
+            </select>
+            <label>Cost: </label>
+            <span id="collisionCost">$0</span>
+            <br/><br/>
+            <label>Documents: </label>
+            <input type="file" id="file" name="documents[]" accept=".jpg, .png, .pdf" multiple/>
+            <br/><br/>
+            <label><b>Total Premium: </b></label>
+            <span id="totalPremium">$330</span>
+            <br/><br/>
+            <button class="btn btn-secondary prev-step mt-3">Previous</button>
+            <button class="btn btn-success submit mt-3">Submit</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.row {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #333;
+}
+
+h4 {
+    margin-top: 0;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table th, .table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f9f9f9;
+    font-size: 1.1em;
+}
+
+
+
+#documentContainer{
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    #documentBtn {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
+
+.policy-btn {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.policy-btn:hover {
+    background-color: dodgerblue
+}
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        th, td {
+            text-align: center;
+        }
+        .col-first {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <p th:text="${greeting}"></p>
+    <p>Your Policy is Confirmed!</p>
+    <p>Thank you for choosing our service. Here are your policy details:</p>
+    <table>
+        <tr>
+            <td class ="col-first">Policy ID:</td>
+            <td th:text="${policyId}">Unknown</td>
+        </tr>
+        <tr>
+            <td class ="col-first" >Username:</td>
+            <td th:text="${username}">Unknown</td>
+        </tr>
+
+        <tr>
+            <td class ="col-first">Start Date:</td>
+            <td th:text="${startDate}">Unknown</td>
+        </tr>
+        <tr>
+            <td class ="col-first">End Date:</td>
+            <td th:text="${endDate}">Unknown</td>
+        </tr>
+        <tr>
+            <td class ="col-first" >Maximum Coverage:</td>
+            <td th:text="${maximumCoverage}">Unknown</td>
+        </tr>
+        <tr>
+            <td class ="col-first"><b>Total Premium: </b></td>
+            <td th:text="${totalPremium}">Unknown</td>
+        </tr>
+    </table>
+    <h4>Vehicle Information: </h4>
+    <table border="1" style="border-collapse: collapse">
+        <tr>
+            <th>
+                Make
+            </th>
+            <th>
+                Model
+            </th>
+            <th>
+                Year
+            </th>
+            <th>
+                Mileage
+            </th>
+            <th>
+                VIN
+            </th>
+        </tr>
+        <tr>
+            <td th:text="${vehicle.make}"></td>
+            <td th:text="${vehicle.model}"></td>
+            <td th:text="${vehicle.year}"></td>
+            <td th:text="${vehicle.mileage}"></td>
+            <td th:text="${vehicle.VIN}"></td>
+        </tr>
+    </table>
+    <h4>Driver Details: </h4>
+    <table border="1" style="border-collapse: collapse">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                License Number
+            </th>
+            <th>
+                Num of Accidents
+            </th>
+            <th>
+                Address
+            </th>
+        </tr>
+        <tr th:each="driver : ${drivers}">
+            <td th:text="${driver.name}"></td>
+            <td th:text="${driver.age}"></td>
+            <td th:text="${driver.driverLicenseNum}"></td>
+            <td th:text="${driver.numOfAccidents}"></td>
+            <td th:text="${driver.address}"></td>
+        </tr>
+    </table>
+</section>
+<footer>
+    <p>Thanks,</p>
+    <p>Wolverine Auto Insurance Customer Service Team</p>
+</footer>
+</body>
+</html>

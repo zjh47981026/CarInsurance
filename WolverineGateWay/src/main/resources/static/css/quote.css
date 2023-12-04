@@ -1,0 +1,169 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.multi-step-form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.select, input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+button.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+button.btn-success {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+#driver2 {
+    display: none;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 20px;
+}
+
+#addDriver {
+    background-color: white;
+    border: 1px solid #007BFF;
+    color: #007BFF;
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.close {
+    font-size: 30px;
+    color: #aaaaaa;
+}
+
+.close:hover,
+.close:focus {
+    color: #888888;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-control {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#card-element {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-default {
+    background-color: #f4f4f4;
+    color: #444;
+    border: none;
+}
+
+.btn-default:hover {
+    background-color: #e2e2e2;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.text-danger {
+    color: #e74c3c;
+}
+
